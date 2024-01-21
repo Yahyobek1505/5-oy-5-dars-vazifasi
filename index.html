@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-<link rel="stylesheet" href="./css/bootstrap.css">
-</head>
-<body>
-  <div class="container ">
-    <h1 class="text-center">Admin Dashboard</h1>
-   <form id="form">
-    <div class="mb-3">
-      <label for="exampleForm" class="form-label" >Name*</label>
-      <input type="text" class="form-control" id="name" placeholder="Name ....">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>5-dars-Javascript-DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Admin Dashboard</h1>
+      <form id="form">
+        <div class="mb-3">
+          <label for="Inputname" class="form-label">Name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Inputname"
+            placeholder="Enter name" />
+        </div>
+        <div class="mb-3">
+          <label for="inputNarx" class="form-label">Narx*</label>
+          <input
+            class="form-control"
+            id="inputNarx"
+            rows="3"
+            placeholder="Enter cost" />
+        </div>
+        <div class="form-floating">
+          <label for="inputCategory">Category*</label>
+          <select
+            class="custom-select"
+            id="inputCategory"
+            aria-label="Floating label select example">
+            <option selected>select the category</option>
+            <option value="Xiomi">Xiomi</option>
+            <option value="Iphone">Iphone</option>
+            <option value="Huawe">Huawe</option>
+            <option value="Samsung">Samsung</option>
+          </select>
+          <button class="btn btn-success w-25 mt-3 mb-2" id="button">Send</button>
+        </div>
+      </form>
     </div>
-    <div class="mb-3">
-      <label for="narx" class="form-label">Narx*</label>
-      <input class="form-control" id="narx" rows="3" placeholder="Narxni kiriting"></input>
+    <div class="main">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <td>No</td>
+            <td>Name</td>
+            <td>Narx</td>
+            <td>Category</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody id="mainScren">
+        
+        </tbody>
+      </table>
     </div>
-    <div class="form-floating">
-      <label for="floatingSelect">Category*</label>
-      <select class="custom-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>select the category</option>
-        <option value="Xiomi">Xiomi</option>
-        <option value="Iphone">Iphone</option>
-        <option value="Huawe">Huawe</option>
-        <option value="Samsung">Samsung</option>
-      </select>
-   </form>
-    </div>
-  </div>
-  <div class="main">
-    <table class="table">
-      <thead class="table-dark">
-        <tr>
-          <td>No</td>
-          <td>Name</td>
-          <td>Narx</td>
-          <td>Category</td>
-          <td>Action</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>No</td>
-          <td>Name</td>
-          <td>Narx</td>
-          <td>Category</td>
-          <td>Action</td>
-        </tr>
-        <tr>
-          <td>No</td>
-          <td>Name</td>
-          <td>Narx</td>
-          <td>Category</td>
-          <td>Action</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</body>
-<script src="./css/bootstrap.min.js"></script>
-<script src="./js/script.js" type="modul"></script>
+  </body>
+  <script src="./js/script.js" type="module">  </script>
 </html>

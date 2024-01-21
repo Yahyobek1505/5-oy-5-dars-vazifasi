@@ -4326,17 +4326,26 @@ input[type="button"].btn-block {
   background: #75e6f5;
   border: 1px solid pink;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .container h1{
   color: #0b2d52;
 }
+td i{
+  cursor: pointer;
+}
+.fa-trash{
+  color: rgb(255, 47, 0);
+}
+.fa-pen-to-square{
+  color: #007bff;
+}
 .main{
   max-width: 1140px;
   margin: 0 auto;
   border: #007bff;
-  background-color: #bccee0;
+  /* background-color: #bccee0; */
 }
 .navbar .container,
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
